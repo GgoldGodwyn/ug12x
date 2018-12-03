@@ -1,0 +1,64 @@
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimaryDark"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:elevation="4dp">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:weightSum="10">
+
+            <ImageView
+                android:id="@+id/apk_image"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/logo"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="7"
+                android:layout_height="match_parent"
+                android:paddingLeft="4dp"
+                android:orientation="vertical">
+
+
+
+                <TextView
+                    android:id="@+id/tool_bar_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="FIT"
+                    android:textSize="18sp"
+                    android:textColor="#ffffff"
+
+                    />
+
+
+            </LinearLayout>
+
+        <IconView
+            android:id="@+id/menu_handle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_gravity="center_horizontal"
+
+            />
+
+
+        </LinearLayout>
+
+
+</android.support.v7.widget.Toolbar>
+

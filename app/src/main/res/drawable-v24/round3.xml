@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- default, when the button is not clicked or focus -->
+    <item android:state_pressed="false" android:state_focused="false">
+        <shape >
+            <solid
+                android:color="@color/colorPrimaryDark" />
+            <stroke
+                android:width="1dp"
+                android:color="@color/colorPrimaryDark" />
+            
+            <corners
+                android:topRightRadius="30dip"
+                android:topLeftRadius="30dip"
+                android:bottomLeftRadius="30dip"
+                android:bottomRightRadius="30dip"/>
+                    
+        </shape>
+    </item>
+   
+    <!-- button focused -->
+    <item android:state_pressed="false" android:state_focused="true">
+        <shape >
+                        
+            <corners
+
+                android:topRightRadius="30dip"
+                android:topLeftRadius="30dip"
+                android:bottomLeftRadius="30dip"
+                android:bottomRightRadius="30dip"/>
+                
+            
+        </shape>
+    </item>
+   
+   <!-- button pressed -->
+    <item android:state_pressed="true" android:state_focused="false">
+        <shape >
+            
+            <solid
+                android:color="#4d2766" />
+            
+            <stroke
+                android:width="1dp"
+                android:color="#bebcc3" />
+            <corners
+                android:topRightRadius="30dip"
+                android:topLeftRadius="30dip"
+                android:bottomLeftRadius="30dip"
+                android:bottomRightRadius="30dip"/>
+            
+        </shape>
+    </item> 
+    
+
+</selector>
+
+
+

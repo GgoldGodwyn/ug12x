@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp"
+    android:id="@+id/activity_dashboard_relative_alert_root">
+
+    <ImageView
+        android:id="@+id/activity_pending_image_logo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dialog_enter"
+        android:layout_below="@+id/activity_pending_image_logo"
+        android:gravity="center"
+        android:id="@+id/alert_pop_question"
+        android:layout_marginBottom="5dp"/>
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/activity_pending"
+        android:textCursorDrawable="@drawable/text_cursor_cyan"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:layout_below="@+id/alert_pop_question"
+        android:id="@+id/activity_pending_material_job_token"
+        />
+
+
+
+
+
+</RelativeLayout>

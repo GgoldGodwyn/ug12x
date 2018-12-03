@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/off_white_background"
+    android:orientation="vertical"
+    android:id="@+id/enter_parent"
+    android:layout_marginTop="50dp">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/enter_view"
+        android:background="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Details"
+        android:gravity="center"
+        android:textSize="17sp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/enter_view"
+        android:id="@+id/enter_details"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="40dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="60dp"
+                android:layout_marginTop="20dp">
+
+
+                <EditText
+                    android:layout_marginTop="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Payment Description"
+                    android:id="@+id/activity_sign_up_material_name"
+                    android:textCursorDrawable="@drawable/text_cursor_cyan"
+                    android:textSize="15sp"
+                    android:gravity="center"/>
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Amount to be charged"
+                    android:id="@+id/activity_sign_up_material_password"
+                    android:inputType="number"
+                    android:textCursorDrawable="@drawable/text_cursor_cyan"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:layout_below="@+id/activity_sign_up_material_name"/>
+
+
+
+                <Button
+                    android:id="@+id/activity_sign_up_button_continue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Proceed"
+                    android:textColor="@color/off_white"
+                    android:onClick="onClickSignUp"
+                    android:background="@drawable/round3"
+                    android:layout_below="@id/activity_sign_up_material_password"
+                    android:layout_margin="50dp"
+                    />
+
+            </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black_semi_transparent"
+            android:id="@+id/activity_sign_up_relative_loading"
+            android:visibility="gone">
+
+            <!--<com.wang.avi.AVLoadingIndicatorView-->
+                <!--android:id="@+id/activity_sign_up_loading"-->
+                <!--android:layout_width="100dp"-->
+                <!--android:layout_height="100dp"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--app:indicator="BallSpinFadeLoader"-->
+                <!--app:indicator_color="@color/white"-->
+
+                <!--/>-->
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>

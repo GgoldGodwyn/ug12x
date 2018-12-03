@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/activity_payment"
+        android:visibility="gone"/>
+    <include layout="@layout/activity_splash_screen"
+        android:visibility="gone"/>
+    <include layout="@layout/alert_pop"
+        android:visibility="gone"/>
+    <include layout="@layout/confirmation"
+        android:visibility="gone"/>
+    <include layout="@layout/enter"
+        android:visibility="gone"/>
+    <include layout="@layout/fingerprint"
+        android:visibility="gone"/>
+    <include layout="@layout/select_payment"
+        android:visibility="gone"/>
+
+</FrameLayout>

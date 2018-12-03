@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/off_white_background"
+    android:orientation="vertical"
+    android:layout_marginTop="50dp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/enter_view"
+        android:background="@color/colorPrimaryDark"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Payment Method/Bank"
+        android:gravity="center"
+        android:textSize="17sp"
+        android:layout_below="@+id/enter_view"
+        android:id="@+id/enter_details"/>
+
+    <RelativeLayout
+        android:layout_below="@+id/enter_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="30dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="20dp" >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:id="@+id/layer_one"
+
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_weight="5"
+                android:text="Name"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="Muyide Ibukun" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/layer_one"
+            android:id ="@+id/layer_two"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_weight="5"
+                android:text="Phone Number"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="08131049314"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/layer_two"
+            android:id ="@+id/layer_three"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_weight="5"
+                android:text="Amount" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="N30000"/>
+
+
+        </LinearLayout>
+
+
+
+        <View
+            android:layout_marginTop = "20dp"
+            android:layout_below="@id/layer_three"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:id ="@+id/layer_view"
+            android:background="@color/almost_black"/>
+
+
+        <Spinner
+            android:id="@+id/dynamic_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layer_view"
+            android:padding="30dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Account Number"
+            android:id="@+id/account_number"
+            android:inputType="number"
+            android:textCursorDrawable="@drawable/text_cursor_cyan"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_below="@+id/dynamic_spinner"/>
+
+
+        <Button
+            android:id="@+id/select_proceed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/account_number"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/round3"
+            android:onClick="onClickSignUp"
+            android:text="Proceed"
+            android:textColor="@color/off_white" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

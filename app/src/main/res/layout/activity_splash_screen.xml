@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/off_white_background">
+
+    <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/status_indicator"
+                android:text="" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:srcCompat="@drawable/icons8_connected_96"
+                android:id="@+id/status_connected"
+                android:visibility="gone"
+                android:layout_below="@+id/status_indicator"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:srcCompat="@drawable/icons8_disconnected_96"
+                android:id="@+id/status_disconnected"
+                android:layout_below="@+id/status_indicator"
+                />
+    <Button
+        android:id="@+id/signUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="signUp"
+        android:textColor="@color/off_white"
+        android:onClick="onClickSignUp"
+        android:background="@drawable/round3"
+        android:layout_below="@+id/status_disconnected"
+        android:layout_margin="50dp"
+        />
+    <Button
+        android:id="@+id/recieve"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recieve Payment"
+        android:textColor="@color/off_white"
+        android:onClick="onClickSignUp"
+        android:background="@drawable/round3"
+        android:layout_below="@+id/signUp"
+        android:layout_margin="50dp"
+        />
+    <Button
+        android:id="@+id/pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="pay"
+        android:textColor="@color/off_white"
+        android:onClick="onClickSignPay"
+        android:background="@drawable/round3"
+        android:layout_below="@id/recieve"
+        android:layout_margin="50dp"
+        />
+
+
+</RelativeLayout>
